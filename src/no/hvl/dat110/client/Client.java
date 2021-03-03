@@ -48,11 +48,10 @@ public class Client extends Thread {
 	public void disconnect() {
 
 		DisconnectMsg msg = new DisconnectMsg(user);
-
+		
 		send(msg);
 
 		connection.close();
-
 	}
 
 	public void subscribe(String topic) {

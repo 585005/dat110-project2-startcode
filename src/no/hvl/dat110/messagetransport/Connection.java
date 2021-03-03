@@ -100,6 +100,7 @@ public class Connection {
 
 	// close the connection by closing streams and the underlying socket
 	public void close() {
+		
 
 		try {
 			

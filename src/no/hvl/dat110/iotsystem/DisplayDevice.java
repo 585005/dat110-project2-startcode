@@ -16,7 +16,7 @@ public class DisplayDevice {
 		// TODO - START
 				
 		// create a client object and use it to
-		Client client = new Client(Common.TEMPTOPIC, Common.BROKERHOST, Common.BROKERPORT);
+		Client client = new Client("DisplayDevice", Common.BROKERHOST, Common.BROKERPORT);
 		
 		// - connect to the broker
 		client.connect();

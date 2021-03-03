@@ -157,6 +157,7 @@ public class Dispatcher extends Stopable {
 		// messages must be sent used the corresponding client session objects
 		
 		//returns all the subscribers to the topic 
+		
 		Set<String> subscribers = storage.getSubscribers(msg.getTopic());
 		
 		Message message = MessageUtils.fromJson(msg.getMessage());
@@ -167,6 +168,8 @@ public class Dispatcher extends Stopable {
 				session.send(message);
 			}
 		}
+		
 
 	}
 }
+
