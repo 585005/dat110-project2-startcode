@@ -158,6 +158,7 @@ public class Dispatcher extends Stopable {
 		
 		//returns all the subscribers to the topic 
 		Set<String> subscribers = storage.getSubscribers(msg.getTopic());
+		
 		Message message = MessageUtils.fromJson(msg.getMessage());
 		
 		for(String s : subscribers) {
