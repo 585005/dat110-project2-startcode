@@ -12,7 +12,7 @@ public class DeleteTopicMsg extends Message {
 	// Constructor, get/set-methods, and toString method
 	// as described in the project text
 
-	public DeleteTopicMsg(String topic) {
+	public DeleteTopicMsg(String user, String topic) {
 		this.topic = topic;
 
 	}

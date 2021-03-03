@@ -12,7 +12,7 @@ public class SubscribeMsg extends Message {
 	// Constructor, get/set-methods, and toString method
 	// as described in the project text
 
-	public SubscribeMsg(String topic) {
+	public SubscribeMsg(String user, String topic) {
 		this.topic = topic;
 
 	}

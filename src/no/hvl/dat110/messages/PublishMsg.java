@@ -5,7 +5,7 @@ import no.hvl.dat110.common.TODO;
 public class PublishMsg extends Message {
 
 	private String topic;
-	private Message message;
+	private String message;
 
 	// message sent from client to create publish a message on a topic
 
@@ -15,7 +15,7 @@ public class PublishMsg extends Message {
 	// Constructor, get/set-methods, and toString method
 	// as described in the project text
 
-	public PublishMsg(String topic, Message message) {
+	public PublishMsg(String user, String topic, String message) {
 		this.topic = topic;
 		this.message = message;
 
@@ -23,7 +23,7 @@ public class PublishMsg extends Message {
 
 	public String getMessage() {
 
-		return MessageUtils.toJson(message);
+		return message;
 
 	}
 
@@ -35,7 +35,7 @@ public class PublishMsg extends Message {
 		this.topic = topic;
 	}
 
-	public void setMessage(Message message) {
+	public void setMessage(String message) {
 		this.message = message;
 	}
 
