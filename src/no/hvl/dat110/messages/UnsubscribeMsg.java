@@ -13,6 +13,8 @@ public class UnsubscribeMsg extends Message {
 	// as described in the project text
 
 	public UnsubscribeMsg(String user, String topic) {
+		super(MessageType.UNSUBSCRIBE, user);
+
 		this.topic = topic;
 
 	}

@@ -16,6 +16,8 @@ public class PublishMsg extends Message {
 	// as described in the project text
 
 	public PublishMsg(String user, String topic, String message) {
+		super(MessageType.PUBLISH, user);
+
 		this.topic = topic;
 		this.message = message;
 

@@ -4,7 +4,6 @@ public class CreateTopicMsg extends Message {
 
 	private String topic;
 
-
 	// message sent from client to create topic on the broker
 
 	// TODO:
@@ -14,6 +13,7 @@ public class CreateTopicMsg extends Message {
 	// as described in the project text
 
 	public CreateTopicMsg(String user, String topic) {
+		super(MessageType.CREATETOPIC, user);
 		this.topic = topic;
 
 	}
