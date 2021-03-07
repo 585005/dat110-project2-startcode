@@ -28,7 +28,12 @@ public class TemperatureDevice {
 			// - publish the temperature(s)
 		
 			client.publish(Common.TEMPTOPIC, Integer.toString(sn.read()));
-			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			i++;
 		}
 		
